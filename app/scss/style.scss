@@ -1,0 +1,77 @@
+$lg-mw: 1200px;
+$md-mw: 992px;
+$sm-mw: 768px;
+$xs-mw: 480px;
+
+$red-color: #DB3340;
+$green-color: #1FDA9A;
+$yellow-color: #E8B71A;
+$text-color: #403b3f;
+
+
+/* MEDIA */
+/* lg  */
+@media only screen and (max-width : $lg-mw) {
+}
+
+/* md  */
+@media only screen and (max-width : $md-mw) {
+}
+
+/* sm  */
+@media only screen and (max-width : $sm-mw) {
+}
+
+/* xs  */ 
+@media only screen and (max-width : $xs-mw) {
+}
+/* /MEDIA */
+
+
+@mixin border {
+	$red: random(256)-1;
+	$green: random(256)-1;
+	$blue: random(256)-1;
+ 	border: 1px solid red;
+ 	border-color: rgb($red, $green, $blue);
+}
+.border {
+	@include border;
+}
+/* Fonts */
+@font-face { 
+  	font-family: 'opensans-regular'; 
+  	src: url('../fonts/open-sans-regular.ttf') format('truetype'); 
+} 
+@mixin f-r {
+	font-family: 'opensans-regular';
+	font-weight: normal;
+}
+@font-face { 
+  	font-family: 'opensans-light'; 
+  	src: url('../fonts/open-sans-light.ttf') format('truetype'); 
+} 
+@mixin f-l {
+	font-family: 'opensans-light';
+	font-weight: lighter;
+}
+@font-face { 
+  	font-family: 'opensans-bold'; 
+  	src: url('../fonts/open-sans-bold.ttf') format('truetype'); 
+} 
+@mixin f-b {
+	font-family: 'opensans-bold';
+	font-weight: bold;
+}
+
+/* /Fonts */
+
+
+/* Global */
+section {
+	margin: auto;
+	box-sizing: border-box;
+}
+
+
+@import "index";

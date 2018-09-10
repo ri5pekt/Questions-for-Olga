@@ -1,0 +1,229 @@
+@mixin border {
+	$red: random(256)-1;
+	$green: random(256)-1;
+	$blue: random(256)-1;
+ 	border: 1px solid red;
+ 	border-color: rgb($red, $green, $blue);
+}
+
+/* Fonts */
+@font-face { 
+  font-family: 'opensans-regular'; 
+  src: url('../fonts/open-sans-regular.ttf') format('truetype'); 
+} 
+@mixin os-r {
+	font-family: 'opensans-regular';
+	font-weight: normal;
+}
+@font-face { 
+  font-family: 'opensans-light'; 
+  src: url('../fonts/open-sans-light.ttf') format('truetype'); 
+} 
+@mixin os-l {
+	font-family: 'opensans-light';
+	font-weight: lighter;
+}
+@font-face { 
+  font-family: 'opensans-bold'; 
+  src: url('../fonts/open-sans-bold.ttf') format('truetype'); 
+} 
+@mixin os-b {
+	font-family: 'opensans-bold';
+	font-weight: bold;
+}
+@font-face { 
+  font-family: 'rub'; 
+  src: url('../fonts/rubdc.otf') format('truetype'); 
+} 
+@mixin rub {
+	font-family: 'rub';
+	font-weight: normal;
+}
+/* /Fonts */
+
+
+/* Global */
+section {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+/* Global */
+
+/* Header */
+header {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+
+	.container-fluid {
+		padding-left: 0;
+	}
+	.navbar {
+		background-color: #fff;
+		border: none;
+		border-radius: 0;
+		max-width: 1100px;
+		@include border;
+		.navbar-brand {
+			margin-left: -15px;
+			img {
+				position: relative;
+				bottom:11px;
+			}
+		}
+		ul > li > a {
+			padding: 15px 19px;
+			color: #c0c0c0;
+			@include os-r;
+			font-size: 18px;
+			text-align: center;
+			line-height: 30px;
+			&:hover {
+				color: #404040;
+				text-decoration: none;
+			}
+			&.aditional-link {
+				display: none;
+			}
+		}
+		.toggle-nav {
+			.navbar-toggle {
+				border: none;
+				background-color: #fff;
+
+				.icon-bar{
+					background-color: #202529;
+					height: 5px;
+					width: 30px;
+				}
+			}
+		}
+		.aditional-links {
+			min-height: 50px;
+			line-height: 60px;	
+			margin-right: -15px;
+			padding-left: 20px;
+			padding-right: 20px;
+			
+			a {
+				margin: 0 10px;
+				color: #404040;
+				@include os-r;
+				font-size: 18px;
+				&:hover {
+					color: #c0c0c0;
+					text-decoration: none;
+				}
+			}
+		}
+		.navbar-collapse {	
+			
+			overflow: hidden;
+			.nav {	
+
+			}
+		}
+	}
+	@media (max-width: 959px) {
+	    .navbar-header {
+	        float: none;
+	    }
+	    .navbar-left,.navbar-right {
+	        float: none !important;
+	    }
+	    .navbar-toggle {
+	        display: block;
+	    }
+	    .navbar-collapse {
+	        border-top: 1px solid transparent;
+	        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	    }
+	    .navbar-fixed-top {
+			top: 0;
+			border-width: 0 0 1px;
+		}
+	    .navbar-collapse.collapse {
+	        display: none!important;
+	    }
+	    .navbar-nav {
+	        float: none!important;
+			margin-top: 7.5px;
+		}
+		.navbar-nav>li {
+	        float: none;
+	        &:nth-child(5) > a {
+				margin-top: 60px;
+	        }
+	    }
+	    .navbar-nav>li>a {
+	        padding-top: 20px !important;
+	        padding-bottom: 20px !important;
+	   
+			color: #111111 !important;
+			font-family: 'opensans-light' !important;
+			font-weight: lighter !important;
+			font-size: 24px !important;
+			text-align: center;
+			line-height: 30px;
+			
+			text-transform: uppercase;
+		
+			margin-right: 20px !important;
+			margin-left: 20px !important;
+			margin-top: 15px;
+			@media only screen and (max-width : 768px) {
+				margin-left: 35px !important;
+			}
+			box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.45);
+			&:hover {
+				color: #404040;
+				text-decoration: none;
+			}
+			&.aditional-link {
+				display: block !important;
+				margin-right: 10% !important;
+				margin-left: 10% !important;
+				@media only screen and (max-width : 768px) {
+					
+				}
+			}
+	    }
+	    .collapse.in{
+	  		display:block !important;
+		}
+		.aditional-links {
+			display: none;
+		}
+	}
+}
+/* /Header */
+
+/* Unique solutions */
+section.unique-solutions {
+
+}
+/* /Unique solutions */
+
+
+
+
+
+
+/* MEDIA */
+/* lg  */
+@media only screen and (max-width : 1200px) {
+}
+
+/* md  */
+@media only screen and (max-width : 992px) {
+}
+
+/* sm  */
+@media only screen and (max-width : 768px) {
+}
+
+/* xs  */ 
+@media only screen and (max-width : 480px) {
+}
+/* /MEDIA */

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Questioner</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<script src="rates/jquery.barrating.min.js"></script>
+	<link rel="stylesheet" href="rates/themes/bars-square.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<section class="screen" id="intro">
+		<h1>Name and room number</h1>
+			<div class="input">
+				<p class="title">Name</p>
+				<input type="text" name="" id="person-name">	
+			</div>
+			<div class="input">
+				<p class="title">Room</p>
+				<input type="text" name="" id="person-room">	
+			</div>
+			<div class="input">
+				<p class="title">Sitting area</p>
+				<select id="person-area">
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option value="40">40</option>
+					<option value="50">50</option>
+					<option value="60">60</option>
+					<option value="70">70</option>
+					<option value="80">80</option>
+					<option value="90">90</option>
+					<option value="90">100</option>
+				</select>	
+			</div>
+			</div>
+			<button type="">Next</button>		
+		</div>
+	</section>
+
+	<!-- First screen -->
+	<section class="screen" id="screen-1">
+		<h1>ATRIUM LOBBY BAR</h1>
+		<div class="content">
+			<p>
+				Thank you for joining us at the Atrium Lobby Bar.
+				<br>We hope you enjoyed your meal and looking forward to host you again.
+				<br>We would love to hear about your experience
+			</p>
+		</div>
+		<div class="rating">
+			<p class="title"></p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+	    </div>
+	</section>
+	
+	<!-- Mark 9,10  -->
+	<section class="screen" id="screen-2">
+		<h1>Thank you for sharing</h1>
+		<div class="content">
+			<p>
+				Here at the Lobby Bar we are striving for excellence. 
+				<br>Your feedback is highly appreciated and will help us to maintain our level of service 
+				<br>and make sure each of your stays with us is memorable 
+			</p>
+
+			<textarea></textarea>
+			
+		</div>
+
+		<div class="content">
+			<p>
+				Thank you for your time
+				&
+				Hope to host you again soon
+			</p>
+		</div>
+
+		<button type="">Next</button>	
+	</section>
+
+	<!-- Mark 8 -->
+	<section class="screen" id="screen-3">
+		<h1>Thank you for sharing</h1>
+		<div class="content">
+			<p>
+				Here at the Lobby Bar we are striving for excellence.
+				<br>Your feedback is highly appreciated and will help us to improve
+ 				our ability to deliver the best service 
+			</p>
+		</div>
+
+		<div class="rating atmosphere" f-id="atmosphere">
+			<p class="title">Atmosphere in the restaurant:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating service" f-id="service">
+			<p class="title">Timeliness of service:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating staff" f-id="staff">
+			<p class="title">Attentiveness of the staff:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating food" f-id="food">
+			<p class="title">Quality of food:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+
+	    <div class="content">
+			<p>
+				Thank you for your time
+				&
+				Hope to host you again soon
+			</p>
+		</div>
+
+		<button type="">Next</button>	
+	</section>
+
+	<!-- Mark 7 -->
+	<section class="screen" id="screen-4">
+		<h1>Thank you for sharing</h1>
+		<div class="content">
+			<p>
+				We sincerely apologize for not meeting your expectations
+				<br>Your feedback is highly appreciated and will help us to improve
+ 				our ability to deliver the best service.
+			</p>
+		</div>
+
+		<div class="rating atmosphere" f-id="atmosphere">
+			<p class="title">Atmosphere in the restaurant:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating service" f-id="service">
+			<p class="title">Timeliness of service:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating staff" f-id="staff">
+			<p class="title">Attentiveness of the staff:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+	    <div class="rating food" f-id="food">
+			<p class="title">Quality of food:</p>
+			<select name="rating" autocomplete="off">
+		        <option value=""></option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+	        </select>
+
+	        <div class="field good">
+	        	<p class="title">Comments:</p>
+	        	<textarea></textarea>
+	        </div>
+
+	        <div class="field bad">
+	        	<p class="title">How can we improve?</p>
+	        	<textarea></textarea>
+	        </div>
+	    </div>
+
+
+	    <div class="content">
+			<p>
+				Thank you for your time
+				We are looking forward to pursuing opportunities 
+				for making your stay memorable 
+			</p>
+		</div>
+
+		<button type="">Next</button>	
+	</section>
+
+
+
+    <!-- Thank you  -->
+	<section class="screen" id="thank-you">
+		<h1>Thank you for your time & hope to host you again soon.</h1>
+		<button type="">Save results and begin new questioner</button>
+	</section>
+ 
+
+    <script>
+    	var data = {};
+
+		function resetData(){
+			data = {
+				date: "",
+				date_now: "",
+	    		personal: {
+	    			name: "",
+	    			room: "",
+	    			area: ""
+	    		},
+	    		main_rating: "",
+	    		bad_rating: {
+	    			atmosphere: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			service: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			staff: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			food: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    		},
+	    		ok_rating: {
+	    			atmosphere: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			service: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			staff: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    			food: {
+	    				rating: "",
+	    				comment: ""
+	    			},
+	    		},
+	    		good_rating: {
+	    			rating: "",
+	    			comment: ""
+	    		}
+    		}
+		}
+
+    	function saveResults() {
+    		var currentdate = new Date(); 
+			var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " - "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes()
+
+            data.date = datetime;
+            data.date_now = Date.now();
+			var storedData = JSON.parse(localStorage.getItem("answers"));
+			if(storedData == null || storedData.length < 1){
+				storedData = [];
+			} 
+			
+			
+			console.log("we loaded stored data. " + storedData);
+			storedData.push(data);
+		
+			console.log(data)
+			localStorage.setItem("answers", JSON.stringify(storedData));
+			
+			var storedData = JSON.parse(localStorage.getItem("answers"));
+			console.log("we updated stored data now it looks like this. " + storedData);
+		}
+    	$(document).ready(function(){
+    		$('.rating select').barrating('show', {
+	            theme: 'bars-square',
+	            showValues: true,
+	            showSelectedRating: false
+	        });
+	        resetData();
+
+	        $("#intro button").on("click", function(){
+	        	data.personal.name = $("#person-name").val();
+	        	data.personal.room = $("#person-room").val();
+	        	data.personal.area = $("#person-area").val();
+	        	changeScreen("#screen-1");
+	        });
+
+	        $('#screen-1 .rating').each(function(){
+	       		var parent = this;
+	       		$(this).find(".br-widget a").on("click", function(){
+	       			val = $(parent).find("select").val();
+	       			data.main_rating = val;
+
+	       			if(val >= 9) {
+	       				changeScreen("#screen-2");
+	       				data.good_rating.rating = val;
+	       			}
+	       			else if(val == 8) {
+	       				changeScreen("#screen-3");
+	       			}
+	       			else if(val < 9) {
+	       				changeScreen("#screen-4");
+	       			}
+	       			
+	       		});
+	       });
+
+	        $("#screen-2 button").on("click", function(){
+	        	data.good_rating.comment = $("#screen-2 textarea").val();
+	        	changeScreen("#thank-you");
+	        });
+
+	         $("#screen-3 button").on("click", function(){
+	         	$('#screen-3 .rating').each(function(){
+		       		val = $(this).find("select").val();
+		       		comment = "";
+		       		$(this).find("textarea").each(function(){
+		       			if($(this).val() != "") comment = $(this).val();
+		       		});
+		       		
+
+		       		dataID = $(this).attr("f-id");
+		       		data.ok_rating[dataID].rating = val;
+		       		data.ok_rating[dataID].comment = comment;
+		       });
+	        	changeScreen("#thank-you");
+	        });
+
+	          $("#screen-4 button").on("click", function(){
+	          	$('#screen-4 .rating').each(function(){
+		       		val = $(this).find("select").val();
+		       		comment = "";
+		       		$(this).find("textarea").each(function(){
+		       			if($(this).val() != "") comment = $(this).val();
+		       		});
+		       		
+
+		       		dataID = $(this).attr("f-id");
+		       		data.bad_rating[dataID].rating = val;
+		       		data.bad_rating[dataID].comment = comment;
+		       });
+	        	changeScreen("#thank-you");
+	        });
+
+	        $("#thank-you button").on("click", function(){
+	        	saveResults();
+	        	setTimeout(function(){location.reload()}, 300);
+	        });
+
+
+	       $('#screen-3 .rating').each(function(){
+	       		var parent = this;
+	       		$(this).find(".br-widget a").on("click", function(){
+	       			val = $(parent).find("select").val();
+
+	       			$(parent).find(".field").hide();
+
+	       			if(val >= 9) $(parent).find(".field.good").fadeIn();
+	       			else $(parent).find(".field.bad").fadeIn();
+	       		});
+	       });
+
+	        $('#screen-4 .rating').each(function(){
+	       		var parent = this;
+	       		$(this).find(".br-widget a").on("click", function(){
+	       			val = $(parent).find("select").val();
+
+	       			$(parent).find(".field").hide();
+
+	       			if(val >= 9) $(parent).find(".field.good").fadeIn();
+	       			else $(parent).find(".field.bad").fadeIn();
+	       		});
+	       });
+
+
+			curScreen = $("#intro");
+			$(curScreen).fadeIn();
+
+
+    	});
+
+    	var curScreen = $("#screen-1");
+
+    	function changeScreen(screen) {
+    		$(curScreen).fadeOut(function(){
+    			curScreen = $(screen);
+    			$(curScreen).fadeIn();
+    		});
+    	}
+
+    </script>
+</body>
+</html>

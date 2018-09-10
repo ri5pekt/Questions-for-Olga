@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wep partners</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<!--CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--JS-->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="js/Carousel.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header-cont">
+			<div class="aditional-elements-cont-left">
+			<div class="aditional-element">
+				<img src="images/logo.svg" alt="">
+			</div>
+			</div>
+			
+			<div class="aditional-elements-cont-right">
+				<div class="aditional-element">
+					<a data-toggle="modal" data-target="#modal_enter">Вход</a> /
+					<a data-toggle="modal" data-target="#modal_reg">Регистрация</a>
+				</div>
+			</div>
+			<nav class="nav-main" id="main_nav">	
+	            <ul class="ul-main">
+	                <li><a class="active" href="#solutions">Главная</a></li>
+	                <li><a href="#counter">Калькулятор</a></li>
+	                <li><a href="#gallery">Наши лендинги</a></li>
+	                <li><a href="#profit">Акция</a></li>
+	            </ul>
+			</nav>
+			<button type="button" class="togle-nav-button" data-toggle="modal" data-target="#mobile_menu_modal">
+			</button>		
+		</div>
+	</header>
+
+
+
+	<!-- Mobile menu -->
+	<div class="menu-mobile modal fade" id="mobile_menu_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body" id="mobile_nav">
+	        <ul class="ul-mobile">
+                <li><a class="main-link active" href="#solutions">Главная</a></li>
+                <li><a class="main-link" href="#counter">Калькулятор</a></li>
+                <li><a class="main-link" href="#gallery">Наши лендинги</a></li>
+                <li><a class="main-link" href="#profit">Акция</a></li>
+
+                <li><a data-toggle="modal" data-target="#modal_enter"class="aditional-link login">Вход</a></li>
+				<li><a data-toggle="modal" data-target="#modal_reg" id="mobile_menu_reg_button" class="aditional-link reg">Регистрация</a></li>
+            </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<section class="unique-solutions" id="solutions">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2 class="second">Уникальные wep click решения</h2>
+					<div class="webmaster-enter">
+						<h3>Вход вебмастера</h3>
+						<input class="login" type="text" placeholder="Логин">
+						<input class="password" type="password" placeholder="Пароль">
+						<a class="forgot" href="#">Забыли пароль?</a>
+						<button class="enter">Вход</button>
+						<button class="reg">Регистрация</button>
+					</div>
+					<button class="sell">Поучавствовать в акции</button>
+				</div>
+
+				<div class="col-sm-6 col-sm-pull-6">
+					<h2 class="first">Уникальные wep click решения</h2>
+					<div class="solution-cont">
+						<p>Даем на 10% больше любой другой ПП</p>
+						<p>Прямые подключения БЕЗ посредников</p>
+						<p>Уникальные лендинги</p>
+						<p>Быстрые выплаты в WMR по запросу</p>
+						<p>Согласование индивидуальных решений</p>
+						<p>Лучшая прибыльность на 1к уников</p>
+						<p>WAP/WEB решения</p>
+					</div>
+
+					<div class="operators-cont">
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo1.png" alt=""></div>
+							<p>60<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo2.png" alt=""></div>
+							<p>50<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo3.png" alt=""></div>
+							<p>38<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo4.png" alt=""></div>
+							<p>25<span class="rub">г</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="counter" id="counter">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<h2>Подсчитайте свою прибыль</h2>
+					<div class="results-cont results-cont-1">
+						<div class="row">
+							<div class="col-xs-4 text-center">
+								<div class="result">
+									<p class="number calc_y_output">0</p>
+									<p class="desc">За год</p>
+								</div>
+							</div>
+							<div class="col-xs-4 text-center">
+								<div class="result">
+									<p class="number calc_m_output">0</p>
+									<p class="desc">За месяц</p>
+								</div>
+							</div>
+							<div class="col-xs-4 text-center">
+								<div class="result">
+									<p class="number calc_d_output">0</p>
+									<p class="desc">За сутки</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inputs-cont">
+						<div class="row">
+							<div class="col-xs-6 col-xs-6-fixed first-select-row">
+								<div class="data-input">		
+									<p class="desc">Выберите нишу:</p>
+									<div class="custom-select" id="type_select">
+										<div class="title"><p></p></div>
+										<div class="body">
+											<p class="option">Баннеры</p>
+											<p class="option">Попап</p>
+											<p class="option">Контекст </p>
+											<p class="option">Редирект</p>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-xs-6-fixed">
+								<div class="data-input">		
+									<p class="desc">Тип трафика:</p>
+									<div class="custom-select" id="subject_select">
+										<div class="title"><p></p></div>
+										<div class="body">
+											<p class="option">Адалт</p>
+											<p class="option">Музыка</p>
+											<p class="option">Общая</p>
+											<p class="option">Видео</p>
+											<p class="option">Файлы</p>
+											<p class="option">ГДЗ</p>
+											<p class="option">Кулинария</p>
+											<p class="option">Остальное</p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="trafic-input">		
+							<p class="desc">Кол-во мобильного 3G-трафика:</p>
+							<input id="field_trafic" type="number" min="0" max="99" placeholder="0">
+						</div>
+						<button id="button_profit">Рассчитать мой доход</button>
+
+						<div class="results-cont results-cont-2">
+							<div class="row">
+								<div class="col-xs-4 text-center">
+									<div class="result">
+										<p class="number calc_y_output">0</p>
+										<p class="desc">За год</p>
+									</div>
+								</div>
+								<div class="col-xs-4 text-center">
+									<div class="result">
+										<p class="number calc_m_output">0</p>
+										<p class="desc">За месяц</p>
+									</div>
+								</div>
+								<div class="col-xs-4 text-center">
+									<div class="result">
+										<p class="number calc_d_output">0</p>
+										<p class="desc">За сутки</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="clearfix visible-xs-block"></div>
+				<div class="col-sm-6">
+					<div class="webmaster-reg">
+						<h3>Регистрация вебмастера </h3>
+						<form>
+							<div class="row">
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_login" type="text" placeholder="Имя пользователя">
+								</div>
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_email" type="email" placeholder="E-mail">
+								</div>
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_pass1" type="password" placeholder="Пароль">
+								</div>
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_pass2" type="password" placeholder="Повторите пароль">
+								</div>
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_wmr" type="text" placeholder="WMR">
+								</div>
+								<div class="col-xs-6 col-xs-6-fixed">
+									<input class="reg_skype" type="text" placeholder="Skype">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<textarea class="reg_text" placeholder="Кратко о себе, планируемый объем трафика, ссылки на ваши работы"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<input type="checkbox" class="reg_checkbox"><p class="agree reg_checkbox_caption">Я согласен с публичной <a href="#">офертой</a></p>
+								</div>
+							</div>
+							
+							<button id="reg_button" class="reg-button enter">Зарегистрироваться</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+		<div class="container-fluid text-center">
+			<div class="navigation">
+				<div class="aditional-elements-cont-left">
+					<div class="aditional-element">
+						<p>Выбор тематики:</p>
+					</div>
+				</div>
+				<nav class="nav-main">	
+		            <ul class="ul-main" id="landing_pages_menu">
+		                <li><a class="selected" href="">Все</a></li>
+		                <li><a href="">Музыка</a></li>
+		                <li><a href="">Видео</a></li>
+		                <li><a href="">Файлы</a></li>
+		                <li><a href="">Кулинария</a></li>
+		            </ul>
+				</nav>
+			</div>
+
+			<div class="custom-select" id="landing_pages_select">
+				<div class="title"><p></p></div>
+				<div class="body">
+					<p class="option">Все</p>
+					<p class="option">Музыка</p>
+					<p class="option">Видео </p>
+					<p class="option">Файлы</p>
+					<p class="option">Кулинария</p>
+				</div>	
+			</div>
+
+			<div class="container-gallery" id="container-gallery">
+		        <ul>
+		            <img src="images/gallery/left.png" class="left">
+		            <img src="images/gallery/right.png" class="right">
+		        </ul>
+		        <div class="cover">
+		        </div>
+		    </div>
+			<div class="space">
+			
+			</div>
+		    <div class="operator" id="operator_cont">
+				<div class="image-cont"></div>
+				<p>60<span class="rub">г</span></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="profit" id="profit">
+		<div class="container-fluid">
+			<h2>Откажитесь от посредников</h2>
+
+			<div class="row">
+				<div class="col-sm-6 col text-center">
+					<div class="profit-cont">
+						<p class="first">То, что ты зарабатываешь сейчас -</p>
+						<p class="second">не предел! Лень проверять?</p>
+						<p class="third">Заплатим наперед сумму дохода<br />
+						за текущий день в другой ПП <span class="bold">+10%!</span><br /> 
+						Ты убедишься, что у нас выгоднее!</p>
+					</div>
+					<div class="weird-arrow">
+					</div>
+					<div class="operators-cont operators-1">
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo1.png" alt=""></div>
+							<p>60<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo2.png" alt=""></div>
+							<p>50<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo3.png" alt=""></div>
+							<p>38<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo4.png" alt=""></div>
+							<p>25<span class="rub">г</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 text-left">
+					<div class="form-block">
+						<input class="url" type="text" placeholder="URL вашей партнерской программы">
+						<input class="email" type="text" placeholder="E-mail">
+						<div class="fast-contact">
+							<p class="title">Быстрый контакт</p>
+							<div class="check-boxes-cont">
+								<div class="check-box">
+									<label><input value="Skype" type="radio" name="contact-type" checked><span class="skype">Skype</span></label>
+								</div>
+								<div class="check-box">
+									<label><input value="Telegram" type="radio" name="contact-type"><span class="telegram">Telegram</span></label>
+								</div>
+							</div>
+							<input id="selected_contact_input" class="fast" type="text" placeholder="Введите ваш Skype">
+						</div>
+						<input class="subscribers" type="text" placeholder="Суточный объем подписок">
+						<p class="add-file" onclick="document.getElementById('selectedFile').click();">Прикрепить скриншот статистики</p>
+						<input type="file" id="selectedFile" style="display:none;" />
+						<button>Поучавствовать в акции</button>
+					</div>
+
+					<div class="operators-cont operators-2">
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo1.png" alt=""></div>
+							<p>60<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo2.png" alt=""></div>
+							<p>50<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo3.png" alt=""></div>
+							<p>38<span class="rub">г</span></p>
+						</div>
+						<div class="operator">
+							<div class="image-cont"><img src="images/logo4.png" alt=""></div>
+							<p>25<span class="rub">г</span></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Регистрация всплывающее-->
+	<div class="modal fade" id="modal_reg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+
+	      	<div class="webmaster-reg">
+	      		<div class="cloud-top"></div>
+	      		<div class="cloud-bottom"></div>
+				<h3>Регистрация вебмастера </h3>
+				<form>
+					<div class="row">
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_login" type="text" placeholder="Имя пользователя">
+						</div>
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_email" type="email" placeholder="E-mail">
+						</div>
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_pass1" type="password" placeholder="Пароль">
+						</div>
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_pass2" type="password" placeholder="Повторите пароль">
+						</div>
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_wmr" type="text" placeholder="WMR">
+						</div>
+						<div class="col-xs-6 col-xs-6-fixed">
+							<input class="reg_skype" type="text" placeholder="Skype">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<textarea class="reg_text" placeholder="Кратко о себе, планируемый объем трафика, ссылки на ваши работы"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<input type="checkbox" class="reg_checkbox"><p class="agree reg_checkbox_caption">Я согласен с публичной <a href="#">офертой</a></p>
+						</div>
+					</div>
+					
+					<button id="reg_button" class="reg-button enter">Зарегистрироваться</button>
+				</form>
+			</div>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+	<!-- /Регистрация всплывающее-->
+	
+	<!-- Вход всплывающее-->
+	<div class="modal fade" id="modal_enter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="cloud-top"></div>
+	      	<div class="cloud-bottom"></div>
+	      	<div class="webmaster-enter">
+				<h3>Вход вебмастера</h3>
+				<input class="login" type="text" placeholder="Логин">
+				<input class="password" type="password" placeholder="Пароль">
+				<a class="forgot" href="#">Забыли пароль?</a>
+				<button class="enter">Вход</button>
+				<button class="reg">Регистрация</button>
+			</div>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+	<!-- /Регистрация всплывающее-->
+
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<a class="skype" href="#">support.wappartners</a>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<a class="telegram" href="#">wap_partners</a>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<a class="mail" href="#">support@wap.partners</a>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<a class="vk" href="#">vk.com/wap.partners</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
